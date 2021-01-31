@@ -1,6 +1,6 @@
 
 //IIFE(즉시실행함수 표현식)
-;(function($, window, document, undefined){ //매개변수
+;(function($, window, document){ //매개변수
     // ECMA Script 5 (이크마 스크립트 5)
     //객체
 
@@ -15,7 +15,6 @@
             this.section09Fn();
             this.section10Fn();
             this.section11Fn();
-            this.section12Fn();
             this.section13Fn();
             this.section14Fn();
         },
@@ -375,18 +374,85 @@
 
                 setTimeout(resizeFn,10);
             
-
-
-
-        },
-        section12Fn:   function(){
-
         },
         section13Fn:   function(){
+            
+            var $num1 = $('.num').eq(0);
+            var $num2 = $('.num').eq(1);
+            var $num3 = $('.num').eq(2);
+            var $num4 = $('.num').eq(3);
+            var cnt1 = 0;
+            var cnt2 = 0;
+            var cnt3 = 0;
+            var cnt4 = 0;
+            var setId1 = null;
+            var setId2 = null;
+            var setId3 = null;
+            var setId4 = null;
+
+            var regExp = /\B(?=(\d{3})+(?!\d))/g;
+
+            function counterFn1(){
+                cnt1 ++;
+                if(cnt1>=7800){
+                    clearInterval(setId1);
+                    clearInterval(setId2);
+                    clearInterval(setId3);
+                    clearInterval(setId4);
+                    $num1.html(7,80);
+                    $num2.html(9,87);
+                    $num3.html(3,50);
+                    $num4.html(1,66);
+                }
+                $num1.html(cnt1.toString().replace(regExp, ','));
+                $num2.html(cnt2.toString().replace(regExp, ','));
+                $num3.html(cnt3.toString().replace(regExp, ','));
+                $num4.html(cnt4.toString().replace(regExp, ','));
+            }
+            setId1 = setInterval(counterFn1,22.82051282);
+
+            function counterFn2(){
+                cnt2 ++;
+                if(cnt2>=9870) clearInterval(setId2);
+                $num2.html(cnt2);
+            }
+            setId2 = setInterval(counterFn2,20.13171226);
+
+            function counterFn3(){
+                cnt3 ++;
+                if(cnt3>=3500) clearInterval(setId3);
+                $num3.html(cnt3);
+            }
+            setId3 = setInterval(counterFn3,38.57142857);
+
+            function counterFn4(){
+                cnt4 ++;
+                if(cnt4>=1660) clearInterval(setId4);
+                $num4.html(cnt4);
+            }
+            setId4 = setInterval(counterFn4,70.24096386);
+            
+
+            var $num = $('#section13 .num');
+            $num.each(function(){
+                var endPoint = $(this).text();
+                var secRate = Number(endPoint)/1000;
+                var start = 0;
+
+                var intCount = setInterval(count, secRate);
+
+                function count(){
+                    start++;
+                    if(start>=endPoint) clearInterval(intCount);
+                    console.log($(this).text().toString(), start);
+                }
+
+            });
+
 
         },
         section14Fn:   function(){
-
+            
         }
     };  //객체 끝
 
