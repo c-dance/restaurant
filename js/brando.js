@@ -11,7 +11,6 @@
             this.section01234Fn(); //섹션 01, 02, 03, 04 반응형
             this.section06Fn();
             this.section07Fn();
-
             this.section09Fn();
             this.section10Fn();
             this.section11Fn();
@@ -453,14 +452,16 @@
         },
         section10Fn:  function(){
             var cnt = 0;
+            var $slideCon = $('#section10 .slide-container');
             var $slideConW = $('#section10 .slide-container').innerWidth();/*슬라이드 컨테이너 너비*/
             var $slideWrap = $('#section10 .slide-wrap');
             var $slide = $('#section10 .slide');/*슬라이드 컨테이너 너비*/
             
             function resizeFn(){
-                $slideConW = $('#section10 .slide-container').innerWidth(); //슬라이드 컨테이너 너비 값을 슬라이드 너비로 설정
+                $slideConW = $slideCon.innerWidth(); //슬라이드 컨테이너 너비 값을 슬라이드 너비로 설정
                 $slideWrap.css({width: $slideConW*3});//슬라이드 랩 너비
                 $slide.css({width: $slideConW});  //슬라이드 아이템 너비
+                mainSlideFn();//mainslide function : responsive 
             }
 
             $(window).resize(function(){
@@ -471,7 +472,7 @@
 
             //main slide func 
             function mainSlideFn(){
-                $('.slide-wrap').stop().animate({left:(-975*cnt)}, 500, 'easeInOutExpo');
+                $slideWrap.stop().animate({left:(-$slideConW*cnt)}, 500, 'easeInOutExpo');
             }
             //next count func
             function nextCountFn(){
@@ -502,7 +503,7 @@
                 }
             });
             //touch event
-            $('#section10 .slide-container').swipe({
+            $slideCon.swipe({
                 swipeLeft: function(){
                     nextCountFn();
                 },
@@ -512,7 +513,25 @@
             });
         },
         section11Fn:   function(){
-            var leftBox = $('#section11');
+            /*responsive*/
+            var $window = $(window);
+            var $leftBox = $('#section11 .left-box');
+            var $rightBox = $('#section11 .right-box');
+            var $leftBoxW = $leftBox.innerWidth();
+            $leftBox.css({height: $leftBoxW});
+            $rightBox.css({height: $leftBoxW});
+
+            function reseizeFn(){
+                $leftBoxW = $('#section11 .left-box').innerWidth().innerWidth();
+                $leftBox.css({height: $leftBoxW});
+                $rightBox.css({height: $leftBoxW});
+            }
+
+            $window.resize(function(){
+                reseizeFn();
+            })
+
+            setTimeout(reseizeFn, 10);
         },
         section12Fn:   function(){
 
