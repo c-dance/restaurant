@@ -432,7 +432,7 @@
             }
             setId4 = setInterval(counterFn4,70.24096386);
             
-
+            /*
             var $num = $('#section13 .num');
             $num.each(function(){
                 var endPoint = $(this).text();
@@ -447,7 +447,7 @@
                     console.log($(this).text().toString(), start);
                 }
 
-            });
+            });*/
 
 
         },
