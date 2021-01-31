@@ -186,8 +186,8 @@
 #wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box {z-index:1;position:absolute;left:22.9860927%;/* 138.836px */top:23.3604%;/* 175.203px; */width:54.0278146%;/* 326.328px */height:53.2792%;/* 399.594px */background:#fff;} /* width 326.328 height 399.594 */
 #wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box:after {content:'';display:block;z-index:2;position:absolute;top:5.0050802%;/* 20px; */left:6.1288029%;/* 20px; */width:84.0651124%;/* 274.328px; */height:86.9867916%;/* 347.594px; */border:6px solid #8C654F;}
 #wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box .content-title {text-align:center;padding-top:80px;}
-#wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box .content-title h2 {padding-bottom:10px;}
-#wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box .content-title h2 img {width:auto;}
+#wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box .content-title h2 {padding-bottom:30px;}
+#wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box .content-title h2 i {font-size: 50px; color: #d8b75f; }
 #wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box .content-title h3 {font-size:19px;color:#d8b75f;font-weight:600;padding-bottom:10px;text-transform:uppercase;}
 #wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box .content-title h4 {font-size:11px;color:#999;font-weight:500;padding-bottom:20px;}
 #wrap #main #section06 .wrap .gap .container .content .gallery > .col  .galery-gap .bg-img .small-box .content-title h5 img {width:auto;}
@@ -386,8 +386,8 @@
 
 
 /* 조상 영역들의 높이를 마지막 자손영역의 높이(내용물의 높이에 따라서)가 결정한다. */
-#wrap #main #section11 {z-index:1;position:relative;width:100%;height:auto;background:url(../img/raspberry-2023404_1920.jpg) no-repeat 50% 0 fixed;}
-#wrap #main #section11::after {z-index:2;position:absolute;left:0;top:0;content:'';display:block;width:100%;height:100%;background:#252525;opacity:.8;}
+#wrap #main #section11 {z-index:1;position:relative;width:100%;height:auto;background:url(../img/background11.jpg) no-repeat 50% 0 fixed;}
+#wrap #main #section11::after {z-index:2;position:absolute;left:0;top:0;content:'';display:block;width:100%;height:100%; background: #000; opacity:.3;}
 #wrap #main #section11 .wrap {z-index:3;position:relative;width:100%;max-width:1170px;height:auto;margin:0 auto;}
 #wrap #main #section11 .wrap .gap {width:100%;}
 #wrap #main #section11 .wrap .gap .container {width:100%;}
@@ -396,34 +396,45 @@
 #wrap #main #section11 .wrap .gap .container .content ul {width:100%;}
 #wrap #main #section11 .wrap .gap .container .content ul li {float:left;width:50%;font-family:'Montserrat';}
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap {margin:15px;background:#fff;overflow:hidden;}
-
-#wrap #main #section11 .wrap .gap .container .content ul li .list-gap .left-box {float:left;width:50%;height:277.5px;}/*박스 높이 = 박스 너비*/
+#wrap #main #section11 .wrap .gap .container .content ul li .list-gap .left-box {float:left;width:50%;height:277.5px;/*박스높이=박스너비*/}
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .left-box .content-gap {width:100%; height: 100%; overflow:hidden;}
-#wrap #main #section11 .wrap .gap .container .content ul li .list-gap .left-box .content-gap img {width:100%; height: 100%; transition:all .3s;}
+#wrap #main #section11 .wrap .gap .container .content ul li .list-gap .left-box .content-gap img {width:100%;height:100%;transition:all .3s;}
 #wrap #main #section11 .wrap .gap .container .content ul li:hover .list-gap .left-box .content-gap img {transform:scale(1.15);}
-
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box {position:relative;float:left;width:50%;height:277.5px;}
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box::before {content:'';display:block;position:absolute;left:-30PX;top:50%;margin-top:-15px;border:15px solid #fff;border-left:15px solid transparent;border-top:15px solid transparent;border-bottom:15px solid transparent;}
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap {padding:23.4234234%  12.972973%;}
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap .text-box {text-align:center;}
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap .text-box h2 {font-size:11px;font-weight:500;color:#ababab;padding-bottom:9.7324%;}
-#wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap .text-box p {font-size:18px;color:#272727;line-height:150%; cursor: pointer;}
+#wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap .text-box p {font-size:18px;color:#272727;line-height:150%;}
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap .text-box h6 {padding-top:9.7324%;}
 #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap .text-box h6 i {display:inline-block;width:30px;height:4px;background:#c8a64b;}
 
 
 /* 조상 영역들의 높이를 마지막 자손영역의 높이(내용물의 높이에 따라서)가 결정한다. */
-#wrap #main #section12 {position:relative;width:100%;height:auto;padding:130px 0;background:#9cd;}
+#wrap #main #section12 {position:relative;width:100%;height:auto;padding:130px 0;}
 #wrap #main #section12 .wrap {width:100%;max-width:1170px;height:auto;margin:0 auto;}
 #wrap #main #section12 .wrap .gap {margin:0 15px;}
-#wrap #main #section12 .wrap .gap .container {width:100%;height:187px;/* 임시높이 */}
+#wrap #main #section12 .wrap .gap .container {width:100%;height:auto;text-align:center;font-family:'Montserrat';}
+#wrap #main #section12 .wrap .gap .container h3 {font-size:20px;color:#626262;font-weight:500;}
+#wrap #main #section12 .wrap .gap .container h2 {font-size:40px;color:#614c45;padding:1.315789%  0  3.508772%  0;font-weight:700;}
+#wrap #main #section12 .wrap .gap .container div {width:100%; height: auto;}
+#wrap #main #section12 .wrap .gap .container div button {cursor:pointer;padding:12px 30px;background:#000;color:#fff;border:2px solid #000;font-size:14px;font-weight:500;}
+#wrap #main #section12 .wrap .gap .container div button:hover {background:transparent;color:#000;}
 
 
 /* 조상 영역들의 높이를 마지막 자손영역의 높이(내용물의 높이에 따라서)가 결정한다. */
-#wrap #main #section13 {position:relative;width:100%;height:auto;padding:130px 0;}
-#wrap #main #section13 .wrap {width:100%;max-width:1170px;height:auto;margin:0 auto;}
-#wrap #main #section13 .wrap .gap {width:100%;}
-#wrap #main #section13 .wrap .gap .container {width:100%;height:200px;/* 임시높이 */}
+#wrap #main #section13 {position:relative;width:100%;height:auto;padding:130px 0;background: url(../img/background12.jpg) 50% 50% no-repeat fixed; background-size: cover;}
+#wrap #main #section13 .wrap {width:100%;max-width:1170px;height:100%;margin:0 auto;}
+#wrap #main #section13 .wrap .gap {width:100%;height: 100%;}
+#wrap #main #section13 .wrap .gap .container {width:100%;height: auto;}
+#wrap #main #section13 .wrap .gap .container ul{width: 100%;}
+#wrap #main #section13 .wrap .gap .container ul li { float: left; width: 25%;}
+#wrap #main #section13 .wrap .gap .container ul li div { width:100%; border-right:1px solid #fff; text-align: center; font-family: 'Montserrat';}
+#wrap #main #section13 .wrap .gap .container ul li:last-child div { border: 0;}
+#wrap #main #section13 .wrap .gap .container ul li div h2 { font-size: 35px; font-weight: 500; color:#fff;}
+#wrap #main #section13 .wrap .gap .container ul li div h3 { padding: 15px 0; font-size: 11px; font-weight: 400; color:#fff;}
+#wrap #main #section13 .wrap .gap .container ul li div span { display: block; }
+#wrap #main #section13 .wrap .gap .container ul li div span i { font-size: 25px; color:#d8b75f;}
 
 
 /* 조상 영역들의 높이를 마지막 자손영역의 높이(내용물의 높이에 따라서)가 결정한다. */
@@ -434,9 +445,9 @@
 
 
 /* 조상 영역들의 높이를 마지막 자손영역의 높이(내용물의 높이에 따라서)가 결정한다. */
-#wrap #footer {z-index:1;position:relative;width:100%;background:url(../img/restaurant-img41.jpg) no-repeat 50% 0;background-size:cover;}
-#wrap #footer::before {content:'';display:block;z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;background:#252525;opacity:.7;}
+#wrap #footer {z-index:1;position:relative;width:100%;background:url(../img/footer.jpg) no-repeat 50% 0;background-size:cover;}
+#wrap #footer::before {content:'';display:block;z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;background:#252525;opacity:.4;}
 #wrap #footer .wrap {z-index:3;position:relative;width:100%;max-width:1170px;height:auto;margin:0 auto;}
 #wrap #footer .wrap .gap {margin:0 15px;}
-#wrap #footer .wrap .gap .container {width:100%;height:410px;/* 임시높이 */background:#c99;}
+#wrap #footer .wrap .gap .container {width:100%;height:410px;/* 임시높이 */}
 

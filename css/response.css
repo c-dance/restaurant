@@ -28,6 +28,12 @@
     #wrap #header .wrap .gap .container .right-wrap .aside span:nth-child(1) {display:none;}
 }
 
+@media all and (max-width:1170px){
+
+    #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap .text-box p {font-size:1.538461538vw/*18px*/;}
+
+}
+
 @media all and (max-width:1024px){
     #wrap #main #section10 .wrap .gap .container .slide-container {width:80%;}    
     #wrap #main #section10 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .content-box {max-width:100%;}    
@@ -57,7 +63,9 @@
 
     #wrap #main #section08 {background-attachment:scroll;}
 
-
+    #wrap #main #section13 .wrap .gap .container ul li {float:left;width:50%;padding:20px 0;}
+    #wrap #main #section13 .wrap .gap .container ul li div {border:0;}
+    #wrap #main #section13 .wrap .gap .container ul li:nth-child(odd) div {border-right:1px solid #ccc;}
 
 }
 
@@ -84,7 +92,9 @@
 
     #wrap #main #section10 .wrap .gap .container .slide-container {width:100%;}  
     #wrap #main #section10 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .content-box .left-wrap div {width:200px;height:200px;}
-    #wrap #main #section10 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .content-box .right-wrap p {width:80%;}         
+    #wrap #main #section10 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .content-box .right-wrap p {width:80%;line-height:150%;font-size:13px;}         
+
+
 }
 
 
@@ -98,7 +108,14 @@
     #wrap #main #section09 .wrap .gap .container #nav ul li a {display:inline-block;}
 
     #wrap #main #section11 .wrap .gap .container .content ul li {float:none;width:100%;}    
+    #wrap #main #section11 .wrap .gap .container .content ul li .list-gap .right-box .content-gap .text-box p {font-size:3.026315789vw/*23px*/;}
 
+    #wrap #main #section12 .wrap .gap .container h3 {font-size:15px;}
+    #wrap #main #section12 .wrap .gap .container h2 {font-size:26px;}
+
+    
+    #wrap #main #section13 .wrap .gap .container ul li {float:none;width:100%;padding:30px 0;}
+    #wrap #main #section13 .wrap .gap .container ul li div {border:0;}
 }
 
 @media all and (max-width:700px){
