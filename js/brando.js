@@ -452,12 +452,54 @@
 
         },
         section14Fn:   function(){
+            /* 전송버튼 클릭시 유효성 검사 후 정상이면 
+            서버로 입력내용 전송
+            전송방식은 비동기 전송방식으로 전송(Ajax) 
+            유효성검사 : 입력된 폼의 정보 내용이 정상이면 전송
+            */
             var $submit = $('#submit');
-
+        
             $submit.on({
                 click: function(event){
                     event.preventDefault();
-                    
+                    /*name, email, interest, message */ 
+                    var $name = $('#name').val();
+                    var $email = $('#email').val();
+                    var $interest = $('#interest').val();
+                    var $message = $('#message').val();
+
+                    if($name=="" ||$email=="" || $interest=="" || $message==""){
+                        alert("fill the form");
+
+                    }else{
+                        alert("send message");
+
+                        $.ajax({
+                            url: './response.php',
+                            type: 'post',
+                            data: {
+                                name: $name,
+                                email: $email,
+                                interest: $interest,
+                                message: $message
+                            },
+                            success: function(data){
+                                console.log(data);
+                                $('.response').html(data);
+
+                                $('#name').val('');
+                                $('#email').val('');
+                                $('#interest').val('');
+                                $('#message').val('');
+                                $('#name').focus();
+                            },
+                            error: function() {
+                                alert('ajax error');
+                            }
+                        });
+
+                    }
+   
                 }
             })
 
