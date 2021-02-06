@@ -63,6 +63,62 @@
     #wrap #main #section13 .wrap .gap .container ul li div { border: 0; }
     #wrap #main #section13 .wrap .gap .container ul li:nth-child(odd) div { border-right: 1px solid #ccc; }
 
+    #wrap #main #section14 .wrap .gap .container .content { 
+        margin: 0 auto;
+        width: 760px;
+        height: auto;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-col { 
+        float: none; 
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left  {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap { 
+        width: 100%; 
+        height: 100%;
+        /*clear: both;*/
+    }
+    
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li { 
+        float: left;
+        width: 33.3333%;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li .content-wrap,
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li:nth-child(2) .content-wrap,
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li:nth-child(3) .content-wrap {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li .content-wrap .icon-gap {
+        padding: 0;
+        width: 27px;
+        height: 27px;
+        font-size: 25px;
+    }   
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li .content-wrap .txt-gap h4 {
+        width: 180px;
+        word-wrap: break-word;
+    } 
+    #wrap #main #section14 .wrap .gap .container .content .content-right {
+        width: 100%;
+        padding: 0;
+
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-right .content-right-gap {
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+
  }
 
 
@@ -91,7 +147,69 @@
 
     #wrap #main #section10 .wrap .gap .container .slide-container { width: 100%; }  
     #wrap #main #section10 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .content-box .left-wrap div { width: 200px;height: 200px; }
-    #wrap #main #section10 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .content-box .right-wrap p { width: 80%;line-height: 150%;font-size: 13px; }         
+    #wrap #main #section10 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .content-box .right-wrap p { width: 80%;line-height: 150%;font-size: 13px; }   
+
+    #wrap #main #section14 .wrap .gap .container .content { 
+        width: 100%;
+        height: auto;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-col { 
+        float: none; 
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left  {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap { 
+        width: 100%; 
+        height: 100%;
+        /*clear: both;*/
+    }
+    
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li { 
+        float: none;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li .content-wrap,
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li:nth-child(2) .content-wrap,
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li:nth-child(3) .content-wrap {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li .content-wrap .icon-gap {
+        float: none;
+        display: inline-block;
+        margin: 0 auto 15px auto;
+        padding: 0;
+        width: 27px;
+        height: 27px;
+        font-size: 25px;
+    }   
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li .content-wrap .txt-gap { float: none;
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-left .content-left-gap li .content-wrap .txt-gap h4 { width: 100%; } 
+    #wrap #main #section14 .wrap .gap .container .content .content-right {
+        width: 100%;
+        padding: 0;
+
+    }
+    #wrap #main #section14 .wrap .gap .container .content .content-right .content-right-gap {
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+
+
 
 
  }

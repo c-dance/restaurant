@@ -452,7 +452,15 @@
 
         },
         section14Fn:   function(){
-            
+            var $submit = $('#submit');
+
+            $submit.on({
+                click: function(event){
+                    event.preventDefault();
+                    
+                }
+            })
+
         }
     };  //객체 끝
 
