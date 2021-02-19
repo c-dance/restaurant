@@ -8,7 +8,7 @@ body {font:normal 14px/1 'Roboto','Nanum Gothic','Noto Sans KR';color:#626262;ba
 ul, li {list-style:none;}
 a {color:#626262;text-decoration:none;}
 h1,h2,h3,h4,h5,h6 {font-weight:100;font-size:14px;}
-.clearfix::after {content:"";display:block;clear:both;} /* 플로팅 핵(hack) */
+.clearfix::after {content:"";display:block;clear:both;}
 .hide {display:none;}
 .blind {display:block;text-indent:-2000px;overflow:hidden;}
 header,main,footer,nav,section,aside {display:block;}
@@ -21,7 +21,6 @@ select {padding:15px;width:100%;color:#aaa;border:1px solid #ddd;box-sizing:bord
 input[type="submit"] {box-shadow:none;border-radius:0;appearance:none;cursor:pointer;display:inline-block;padding:15px 25px;}
 
 
-/* 바로가기 메뉴 */
 .skip {z-index:2;position:fixed;top:0;left:0;width:100%;}
 .skip li {width:100%;}
 .skip li a {display:block;line-height:0;font-size:0;background:#f9f9f9;color:#000;text-align:center;}

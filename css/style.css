@@ -356,29 +356,28 @@
     height: 100%;
 } 
 
-
 #wrap #main #section05 { 
     width: 100%;
     height: auto;
 } 
 #wrap #main #section05 .wrap {
-     width: 100%;
-     max-width: 1170px;
-     margin: 0 auto;
-    } 
-#wrap #main #section05 .wrap .gap { width:  100%; } 
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+} 
+#wrap #main #section05 .wrap .gap { width: 100%; } 
 #wrap #main #section05 .wrap .gap .container { 
     width: 100%;
     height: auto;
 } 
-
 #wrap #main #section05 .wrap .gap .container .title {
     text-align: center;
-    padding-bottom: 6.8376068%;} /* 0.068376068= 80/1170 */
+    padding-bottom: 6.8376068%;
+} /* 0.068376068= 80/1170 */
 #wrap #main #section05 .wrap .gap .container .content { width:  100%;} 
 #wrap #main #section05 .wrap .gap .container .content .left { 
     float: left;
-    width:  63.5897436%; /* 744px */
+    width: 63.5897436%; /* 744px */
 } 
 #wrap #main #section05 .wrap .gap .container .content .left .content-gap { 
     width:  100%; 
@@ -1419,11 +1418,21 @@
     letter-spacing: 4px;
     font-size: 30px;
 }
-#wrap #footer .wrap .gap .container .icon-wrap a .fa-facebook-square { color: #3b5998; }
-#wrap #footer .wrap .gap .container .icon-wrap a .fa-instagram-square { color: #00acee; }
-#wrap #footer .wrap .gap .container .icon-wrap a .fa-dribbble-square { color: #ea4c89; }
-#wrap #footer .wrap .gap .container .icon-wrap a .fa-twitter-square { color: #00acee; }
-#wrap #footer .wrap .gap .container .icon-wrap a .fa-youtube { color: #c4302b; }
+#wrap #footer .wrap .gap .container .icon-wrap a {
+    display: inline-block;
+    margin: 0 6px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+#wrap #footer .wrap .gap .container .icon-wrap a:nth-child(1) { background:#3b5998; }
+#wrap #footer .wrap .gap .container .icon-wrap a:nth-child(2) { background:#00aced; }
+#wrap #footer .wrap .gap .container .icon-wrap a:nth-child(3) { background:#ea4c89; }
+#wrap #footer .wrap .gap .container .icon-wrap a:nth-child(4) { background:#b00; }
+#wrap #footer .wrap .gap .container .icon-wrap a:nth-child(5) { background:#007bb6; }
 #wrap #footer .wrap .gap .container hr { 
     display: block;
     margin: 0 auto;
